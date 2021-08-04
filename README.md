@@ -1,3 +1,2 @@
-# chapsnat
-
-this is a bad readme right now. 
+# Lots 2 Parks
+ 
