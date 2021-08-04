@@ -35,20 +35,28 @@ export default function CameraScreen() {
               );
             }}
           >
-            <Text style={styles.text}> Flip </Text>
+            <Image 
+            style={styles.iconButtons}
+            source={{uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/buttons%2FcameraFlip.png?alt=media&token=5cd9bea8-5828-4775-9c7a-46d5c0118b70"}}
+            />
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity>
-          <Image
-            style={styles.voteButton}
-            source={{
-              uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/voteButton.png?alt=media&token=dcc218a7-53fe-4b56-bb40-cdbe9382e0e2",
-            }}
-          />
-        </TouchableOpacity>
-
-        <CameraBottomButtons />
+        <View style={styles.bottomButtomContainer}>
+          <View>
+            <Text style={styles.text}> Tap to</Text>
+            <Text style={styles.text}>Change</Text>
+          </View>
+          <TouchableOpacity>
+            <Image
+              style={styles.voteButton}
+              source={{
+                uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/voteButton.png?alt=media&token=dcc218a7-53fe-4b56-bb40-cdbe9382e0e2",
+              }}
+            />
+          </TouchableOpacity>
+          <CameraBottomButtons />
+        </View>
       </Camera>
     </View>
   );
@@ -62,10 +70,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   buttonContainer: {
-    flex: 1,
+    justifyContent: "flex-end",
     backgroundColor: "transparent",
     flexDirection: "row",
-    margin: 20,
+    margin: 10
+  },
+  iconButtons: {
+    width: 25,
+    height: 30,
+  },
+  voteButtonContainer: {
+    flex: 1,
   },
   button: {
     flex: 0.1,
@@ -76,25 +91,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "white",
   },
-  lensButtonContainer: {
+  bottomButtomContainer: {
     flex: 1,
-    backgroundColor: "transparent",
-    justifyContent: "space-between",
-    flexDirection: "row",
-    margin: 50,
-  },
-  centerButton: {
-    width: 65,
-    height: 65,
-  },
-  sideButton: {
-    width: 45,
-    height: 45,
+    alignItems: "center",
+    justifyContent: "flex-start",
+    paddingTop: 475
   },
   voteButton: {
-    flexDirection: "row",
-    marginLeft: 150,
-    marginTop: 500,
+    margin: 15,
     width: 110,
     height: 30,
   },

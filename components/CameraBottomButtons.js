@@ -4,7 +4,6 @@ import { StyleSheet, View, TouchableOpacity, Image } from "react-native";
 export default function CameraBottomButtons() {
   return (
     <View style={styles.lensButtonContainer}>
-      {/* Input Lens Buttons Here */}
       <TouchableOpacity>
         <Image
           style={styles.sideButton}
@@ -50,33 +49,13 @@ export default function CameraBottomButtons() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  camera: {
-    flex: 1,
-  },
-  buttonContainer: {
-    flex: 1,
-    backgroundColor: "transparent",
-    flexDirection: "row",
-    margin: 20,
-  },
-  button: {
-    flex: 0.1,
-    alignSelf: "flex-end",
-    alignItems: "center",
-  },
-  text: {
-    fontSize: 18,
-    color: "white",
-  },
   lensButtonContainer: {
     flex: 1,
+    flexDirection: "row",
+    width: "100%",
     backgroundColor: "transparent",
     justifyContent: "space-between",
-    flexDirection: "row",
-    margin: 50,
+    paddingHorizontal: 30,
   },
   centerButton: {
     width: 65,
@@ -85,12 +64,5 @@ const styles = StyleSheet.create({
   sideButton: {
     width: 45,
     height: 45,
-  },
-  voteButton: {
-    flexDirection: "row",
-    marginLeft: 150,
-    marginTop: 500,
-    width: 110,
-    height: 30,
   },
 });
