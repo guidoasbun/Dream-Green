@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Image,
+} from "react-native";
 import { Camera } from "expo-camera";
+
+import { VotingModal } from "./VotingModal";
 
 import CameraBottomButtons from "../components/CameraBottomButtons";
 
@@ -24,6 +32,7 @@ export default function CameraScreen() {
   return (
     <View style={styles.container}>
       <Camera style={styles.camera} type={type}>
+        
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button}
@@ -35,9 +44,11 @@ export default function CameraScreen() {
               );
             }}
           >
-            <Image 
-            style={styles.iconButtons}
-            source={{uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/buttons%2FcameraFlip.png?alt=media&token=5cd9bea8-5828-4775-9c7a-46d5c0118b70"}}
+            <Image
+              style={styles.iconButtons}
+              source={{
+                uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/buttons%2FcameraFlip.png?alt=media&token=5cd9bea8-5828-4775-9c7a-46d5c0118b70",
+              }}
             />
           </TouchableOpacity>
         </View>
@@ -47,14 +58,9 @@ export default function CameraScreen() {
             <Text style={styles.text}> Tap to</Text>
             <Text style={styles.text}>Change</Text>
           </View>
-          <TouchableOpacity>
-            <Image
-              style={styles.voteButton}
-              source={{
-                uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/voteButton.png?alt=media&token=dcc218a7-53fe-4b56-bb40-cdbe9382e0e2",
-              }}
-            />
-          </TouchableOpacity>
+
+          <VotingModal/>
+
           <CameraBottomButtons />
         </View>
       </Camera>
@@ -73,7 +79,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     backgroundColor: "transparent",
     flexDirection: "row",
-    margin: 10
+    margin: 10,
   },
   iconButtons: {
     width: 25,
@@ -88,18 +94,24 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   text: {
-    fontSize: 18,
+    fontSize: 25,
     color: "white",
   },
   bottomButtomContainer: {
     flex: 1,
     alignItems: "center",
     justifyContent: "flex-start",
-    paddingTop: 475
+    paddingTop: 425,
   },
   voteButton: {
     margin: 15,
     width: 110,
     height: 30,
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22,
   },
 });
