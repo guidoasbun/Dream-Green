@@ -11,6 +11,11 @@ import {
 } from "react-native";
 
 import { VoteText } from "../components/VoteText";
+import { VotingSelectors } from "../components/VotingSelectors";
+
+const logoImage = require("../assets/logos/LAlandTrustIcon.png");
+const closeButtonImage = require("../assets/buttons/closeButton2.png");
+const voteNowButton = require("../assets/buttons/voteButton.png");
 
 export const VotingModal = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -28,33 +33,19 @@ export const VotingModal = () => {
       >
         <View style={styles.modelViewContainer}>
           <View style={styles.buttonContainer}>
-            <Image
-              style={styles.landTrustIcon}
-              source={{
-                uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/icons%2FLAlandTrustIcon.png?alt=media&token=7bafa3b4-34dd-46a1-a5ca-7e5c783860c7",
-              }}
-            />
+            <Image style={styles.landTrustIcon} source={logoImage} />
             <TouchableOpacity onPress={() => setModalVisible(!modalVisible)}>
-              <Image
-                style={styles.iconButtons}
-                source={{
-                  uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/buttons%2FcloseButton2.png?alt=media&token=99215138-eddc-47c0-87b7-52a5262bc886",
-                }}
-              />
+              <Image style={styles.iconButtons} source={closeButtonImage} />
             </TouchableOpacity>
           </View>
 
           <VoteText />
+          <VotingSelectors />
         </View>
       </Modal>
 
       <TouchableOpacity onPress={() => setModalVisible(true)}>
-        <Image
-          style={styles.voteButton}
-          source={{
-            uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/voteButton.png?alt=media&token=dcc218a7-53fe-4b56-bb40-cdbe9382e0e2",
-          }}
-        />
+        <Image style={styles.voteButton} source={voteNowButton} />
       </TouchableOpacity>
     </View>
   );

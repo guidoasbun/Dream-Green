@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
+        maxHeight: 200
     },
     header: {
         fontSize: 25,

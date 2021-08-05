@@ -7,10 +7,11 @@ import {
   Image,
 } from "react-native";
 import { Camera } from "expo-camera";
-
 import { VotingModal } from "./VotingModal";
 
 import CameraBottomButtons from "../components/CameraBottomButtons";
+
+const cameraFlipButton = require("../assets/buttons/cameraFlip.png")
 
 export default function CameraScreen() {
   const [hasPermission, setHasPermission] = useState(null);
@@ -46,9 +47,7 @@ export default function CameraScreen() {
           >
             <Image
               style={styles.iconButtons}
-              source={{
-                uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/buttons%2FcameraFlip.png?alt=media&token=5cd9bea8-5828-4775-9c7a-46d5c0118b70",
-              }}
+              source={cameraFlipButton}
             />
           </TouchableOpacity>
         </View>
