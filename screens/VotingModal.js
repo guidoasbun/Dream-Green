@@ -11,13 +11,13 @@ import {
 } from "react-native";
 
 import { VoteText } from "../components/VoteText";
-import { VotingSelectors } from "../components/VotingSelectors";
+import  VotingSelectors  from "../components/VotingSelectors";
 
 const logoImage = require("../assets/logos/LAlandTrustIcon.png");
-const closeButtonImage = require("../assets/buttons/closeButton2.png");
+const closeButtonImage = require("../assets/buttons/closeButton3.png");
 const voteNowButton = require("../assets/buttons/voteButton.png");
 
-export const VotingModal = () => {
+export const VotingModal = ({ navigation }) => {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
@@ -78,8 +78,8 @@ const styles = StyleSheet.create({
     height: 30,
   },
   iconButtons: {
-    width: 25,
-    height: 30,
+    width: 30,
+    height: 15,
   },
   bottomButtomContainer: {
     flex: 1,

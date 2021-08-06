@@ -10,8 +10,12 @@ import SignupScreen from "./screens/SignupScreen";
 import TestScreen from "./screens/TestScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import BottomTabNavigator from "./navigation/BottomTabNavigator";
+import { VotingResults } from "./screens/VotingResults";
 import firebase from "@firebase/app";
 import { ActionSheetProvider } from "@expo/react-native-action-sheet";
+
+import CameraScreen from "./screens/CameraScreen";
+import VotingModalFull from "./screens/VotingModalFull";
 
 const Stack = createStackNavigator();
 
@@ -38,6 +42,9 @@ function App() {
                 <Stack.Screen name="Friends" component={FriendsScreen} />
                 <Stack.Screen name="Profile" component={ProfileScreen} />
                 <Stack.Screen name="Test" component={TestScreen} />
+                <Stack.Screen name="Camera" component={CameraScreen} />
+                <Stack.Screen name="VotingResults" component={VotingResults} />
+                <Stack.Screen name="Vote Now!!!" component={VotingModalFull} />
               </>
             ) : (
               <>

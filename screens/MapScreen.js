@@ -56,8 +56,8 @@ export default function MapScreen({ navigation }) {
             title={"Current Location"}
             description={"You are here!"}
             onCalloutPress={(e) => {
-              console.log(e.nativeEvent);
-              navigation.navigate("Test");
+              // console.log(e.nativeEvent);
+              navigation.navigate("Camera");
             }}
           />
         ) : null}

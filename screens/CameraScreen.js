@@ -5,15 +5,18 @@ import {
   View,
   TouchableOpacity,
   Image,
+  Button,
 } from "react-native";
 import { Camera } from "expo-camera";
 import { VotingModal } from "./VotingModal";
 
 import CameraBottomButtons from "../components/CameraBottomButtons";
 
-const cameraFlipButton = require("../assets/buttons/cameraFlip.png")
+const cameraFlipButton = require("../assets/buttons/cameraFlip.png");
+const voteNowButton = require("../assets/buttons/voteButton.png");
 
-export default function CameraScreen() {
+
+export default function CameraScreen({ navigation }) {
   const [hasPermission, setHasPermission] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
 
@@ -33,7 +36,6 @@ export default function CameraScreen() {
   return (
     <View style={styles.container}>
       <Camera style={styles.camera} type={type}>
-        
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button}
@@ -45,20 +47,19 @@ export default function CameraScreen() {
               );
             }}
           >
-            <Image
-              style={styles.iconButtons}
-              source={cameraFlipButton}
-            />
+            <Image style={styles.iconButtons} source={cameraFlipButton} />
           </TouchableOpacity>
         </View>
 
         <View style={styles.bottomButtomContainer}>
-          <View>
-            <Text style={styles.text}> Tap to</Text>
-            <Text style={styles.text}>Change</Text>
-          </View>
 
-          <VotingModal/>
+          <TouchableOpacity onPress={() => navigation.navigate("Vote Now!!!")}>
+            <Image style={styles.voteButton} source={voteNowButton} />
+          </TouchableOpacity>
+
+          
+
+          {/* <VotingModal/> */}
 
           <CameraBottomButtons />
         </View>
@@ -100,12 +101,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "flex-start",
-    paddingTop: 425,
+    paddingTop: 545,
   },
   voteButton: {
     margin: 15,
     width: 110,
     height: 30,
+    marginBottom: 30
   },
   centeredView: {
     flex: 1,
