@@ -5,11 +5,11 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  KeyboardAvoidingView,
 } from "react-native";
-import { CheckBox } from "react-native-elements";
 
+import { CheckBox } from "react-native-elements";
 import { VoteText } from "../components/VoteText";
-import VotingSelectors from "../components/VotingSelectors";
 
 const logoImage = require("../assets/logos/LAlandTrustIcon.png");
 const voteButton = require("../assets/buttons/voteButton2.png");
@@ -42,70 +42,85 @@ export default function VotingModalFull({ navigation }) {
   };
 
   return (
-    <View style={styles.container}>
-      <View style={styles.modelViewContainer}>
-        <View style={styles.buttonContainer}>
-          <Image style={styles.landTrustIcon} source={logoImage} />
-        </View>
-        <VoteText />
-        <View style={styles.votingButtonsContainer}>
-          <View style={styles.votingButtons}>
-            <CheckBox
-              title="Botanical Garden                    "
-              textStyle={styles.listItem}
-              checkedIcon="dot-circle-o"
-              uncheckedIcon="circle-o"
-              checked={bgVote}
-              onPress={onPressbgVote}
-            />
-            <CheckBox
-              title="Food Garden"
-              textStyle={styles.listItem}
-              checkedIcon="dot-circle-o"
-              uncheckedIcon="circle-o"
-              checked={fgVote}
-              onPress={onPressFgVote}
-            />
-            <CheckBox
-              title="Comunity Garden"
-              textStyle={styles.listItem}
-              checkedIcon="dot-circle-o"
-              uncheckedIcon="circle-o"
-              checked={cgVote}
-              onPress={onPressCgVote}
-            />
-            <CheckBox
-              title="Other"
-              textStyle={styles.listItem}
-              checkedIcon="dot-circle-o"
-              uncheckedIcon="circle-o"
-              checked={otVote}
-              onPress={onPressOtVote}
-            />
-            {otVote ? (
-              <TextInput
-                style={styles.input}
-                onChangeText={onChangeText}
-                value={text}
-              />
-            ) : (
-              <></>
-            )}
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.container2}
+    >
+      <View style={styles.container}>
+        <View style={styles.modelViewContainer}>
+          <View style={styles.buttonContainer}>
+            <Image style={styles.landTrustIcon} source={logoImage} />
           </View>
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate("VotingResults");
-            }}
-          >
-            <Image style={styles.voteButton} source={voteButton} />
-          </TouchableOpacity>
+          <VoteText />
+          <View style={styles.votingButtonsContainer}>
+            <View style={styles.votingButtons}>
+              <CheckBox
+                title="Botanical Garden                    "
+                textStyle={styles.listItem}
+                checkedIcon="dot-circle-o"
+                uncheckedIcon="circle-o"
+                checked={bgVote}
+                onPress={onPressbgVote}
+              />
+              <CheckBox
+                title="Food Garden"
+                textStyle={styles.listItem}
+                checkedIcon="dot-circle-o"
+                uncheckedIcon="circle-o"
+                checked={fgVote}
+                onPress={onPressFgVote}
+              />
+              <CheckBox
+                title="Comunity Garden"
+                textStyle={styles.listItem}
+                checkedIcon="dot-circle-o"
+                uncheckedIcon="circle-o"
+                checked={cgVote}
+                onPress={onPressCgVote}
+              />
+              <CheckBox
+                title="Other"
+                textStyle={styles.listItem}
+                checkedIcon="dot-circle-o"
+                uncheckedIcon="circle-o"
+                checked={otVote}
+                onPress={onPressOtVote}
+              />
+              {otVote ? (
+                <TextInput
+                  placeholder="Enter your opinion."
+                  style={styles.input}
+                  onChangeText={onChangeText}
+                  value={text}
+                />
+              ) : (
+                <></>
+              )}
+            </View>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("VotingResults", {
+                  BGVote: bgVote,
+                  FGVote: fgVote,
+                  CGVote: cgVote,
+                  OTVote: otVote,
+                  OTText: text,
+                });
+              }}
+            >
+              <Image style={styles.voteButton} source={voteButton} />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
+  container2: {
+    flex: 1
+  },
   container: {
     flex: 1,
     alignItems: "center",
@@ -132,8 +147,8 @@ const styles = StyleSheet.create({
   },
   voteButton: {
     margin: 15,
-    width: 110,
-    height: 30,
+    width: 140,
+    height: 50,
   },
   iconButtons: {
     width: 30,

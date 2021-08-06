@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import Colors from "../constants/Colors";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Image } from "react-native";
 import * as Location from "expo-location";
 import MapView, { Marker } from "react-native-maps";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Ionicons } from "@expo/vector-icons";
 import colors from "../constants/Colors";
+
+const mapEmoji = require("../assets/mapImages/mapEmoji1.png")
 
 const LOS_ANGELES_REGION = {
   latitude: 34.0522,
@@ -59,7 +61,10 @@ export default function MapScreen({ navigation }) {
               // console.log(e.nativeEvent);
               navigation.navigate("Camera");
             }}
-          />
+
+          >
+            <Image style={styles.mapEmoji}   source={mapEmoji}/>
+          </Marker>
         ) : null}
       </MapView>
       {currLocation ? (
@@ -96,4 +101,8 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     backgroundColor: colors.snapyellow,
   },
+  mapEmoji: {
+    height: 100,
+    width: 100
+  }
 });

@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "flex-start",
-    paddingTop: 545,
+    paddingTop: 500,
   },
   voteButton: {
     margin: 15,
