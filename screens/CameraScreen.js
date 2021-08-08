@@ -5,16 +5,15 @@ import {
   View,
   TouchableOpacity,
   Image,
-  Button,
+  
 } from "react-native";
 import { Camera } from "expo-camera";
-import { VotingModal } from "./VotingModal";
+
 
 import CameraBottomButtons from "../components/CameraBottomButtons";
 
 const cameraFlipButton = require("../assets/buttons/cameraFlip.png");
 const voteNowButton = require("../assets/buttons/voteButton.png");
-
 
 export default function CameraScreen({ navigation }) {
   const [hasPermission, setHasPermission] = useState(null);
@@ -52,14 +51,9 @@ export default function CameraScreen({ navigation }) {
         </View>
 
         <View style={styles.bottomButtomContainer}>
-
           <TouchableOpacity onPress={() => navigation.navigate("Vote Now!!!")}>
             <Image style={styles.voteButton} source={voteNowButton} />
           </TouchableOpacity>
-
-          
-
-          {/* <VotingModal/> */}
 
           <CameraBottomButtons />
         </View>
@@ -107,7 +101,7 @@ const styles = StyleSheet.create({
     margin: 15,
     width: 110,
     height: 30,
-    marginBottom: 30
+    marginBottom: 30,
   },
   centeredView: {
     flex: 1,

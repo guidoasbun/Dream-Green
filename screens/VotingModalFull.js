@@ -11,7 +11,7 @@ import {
 import { CheckBox } from "react-native-elements";
 import { VoteText } from "../components/VoteText";
 
-const logoImage = require("../assets/logos/LAlandTrustIcon.png");
+const logoImage = require("../assets/logos/dreamGreen2.png");
 const voteButton = require("../assets/buttons/voteButton2.png");
 
 export default function VotingModalFull({ navigation }) {
@@ -49,7 +49,7 @@ export default function VotingModalFull({ navigation }) {
       <View style={styles.container}>
         <View style={styles.modelViewContainer}>
           <View style={styles.buttonContainer}>
-            <Image style={styles.landTrustIcon} source={logoImage} />
+            <Image style={styles.logoIcon} source={logoImage} />
           </View>
           <VoteText />
           <View style={styles.votingButtonsContainer}>
@@ -140,10 +140,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     margin: 20,
   },
-  landTrustIcon: {
-    width: 200,
-    height: 50,
-    marginRight: 55,
+  logoIcon: {
+    width: 355,
+    height: 35,
   },
   voteButton: {
     margin: 15,
@@ -154,12 +153,6 @@ const styles = StyleSheet.create({
     width: 30,
     height: 15,
   },
-  bottomButtomContainer: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "flex-start",
-    paddingTop: 425,
-  },
   votingButtonsContainer: {
     flex: 1,
     width: "100%",
@@ -167,7 +160,7 @@ const styles = StyleSheet.create({
   },
   votingButtons: {
     flex: 1,
-    maxHeight: 375,
+    maxHeight: 490,
   },
   input: {
     height: 40,

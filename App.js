@@ -16,6 +16,7 @@ import { ActionSheetProvider } from "@expo/react-native-action-sheet";
 
 import CameraScreen from "./screens/CameraScreen";
 import VotingModalFull from "./screens/VotingModalFull";
+import MapScreen from "./screens/MapScreen";
 
 const Stack = createStackNavigator();
 
@@ -45,6 +46,7 @@ function App() {
                 <Stack.Screen name="Camera" component={CameraScreen} />
                 <Stack.Screen name="VotingResults" component={VotingResults} />
                 <Stack.Screen name="Vote Now!!!" component={VotingModalFull} />
+                <Stack.Screen name="Map" component={MapScreen} />
               </>
             ) : (
               <>

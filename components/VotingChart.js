@@ -16,7 +16,7 @@ export default function VotingChart() {
     labels: ["Botanical Gardens", "Food Garden", "Community Garden", "Other"],
     datasets: [
       {
-        data: [30, 45, 28, 50],
+        data: [20, 12, 17, 10],
       },
     ],
   };
@@ -28,12 +28,17 @@ export default function VotingChart() {
     color: (opacity = 1) => `rgba(10, 117, 10, ${opacity})`,
     labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
     style: {
-      borderRadius: 16},
-      
+      borderRadius: 16,
+    },
   };
 
   return (
     <View style={styles.container}>
+      <View style={styles.TextContainer}>
+        <Text style={styles.text}>21704 S Figueroa St</Text>
+        <Text style={styles.text}>Carson, CA 90745</Text>
+      </View>
+
       <BarChart
         style={{
           marginVertical: 8,
@@ -42,7 +47,6 @@ export default function VotingChart() {
         data={data}
         width={screenWidth}
         height={400}
-        
         chartConfig={chartConfig}
         verticalLabelRotation={30}
       />
@@ -51,8 +55,15 @@ export default function VotingChart() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+  container: {
+    flex: 1,
     
-    }
+  },
+  TextContainer: {
+    alignItems: "center",
+    margin: 10
+  },
+  text: {
+    fontSize: 20
+  }
 });
