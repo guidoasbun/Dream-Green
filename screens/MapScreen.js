@@ -11,7 +11,8 @@ import firebase from "@firebase/app";
 
 const mapEmoji = require("../assets/mapImages/mapEmoji2.png");
 const lotImage = require("../assets/mapImages/lotsIcon.png");
-const voteButton = require("../assets/buttons/voteButton2.png");
+const voteButton = require("../assets/mapImages/voteNowButton.png");
+const directionsButton = require("../assets/mapImages/directionsButton.png");
 
 const LOS_ANGELES_REGION = {
   latitude: 34.0522,
@@ -35,6 +36,10 @@ const LOT2 = {
   latitude: 33.841896,
   longitude: -118.276482,
 };
+const LOT3 = {
+  latitude: 33.823936,
+  longitude: -118.298576
+}
 
 export default function MapScreen({ navigation }) {
   const [currLocation, setCurrLocation] = useState(null);
@@ -103,20 +108,21 @@ export default function MapScreen({ navigation }) {
               <Image style={styles.lotIcon} source={lotImage} />
               <Callout>
                 <View style={styles.calloutContainer}>
-                  <Text>21704 S Figueroa St.</Text>
                   <Image
                     style={styles.locationImage}
                     source={{
                       uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/locationImages%2F21704SFigueroaSt.png?alt=media&token=11c3a127-cd02-4974-a6f9-2e230d36cc8f",
                     }}
                   />
-                  <TouchableOpacity
-                    onPress={() => {
-                      navigation.navigate("Camera");
-                    }}
-                  >
+                  <Text style={styles.headerText}>Carson Lot A - DreamGreen Location</Text>
+                  <Text>21704 S Figueroa St Carson, CA 90745</Text>
+                  <View style={styles.buttonContainer}>
                     <Image style={styles.voteButton} source={voteButton} />
-                  </TouchableOpacity>
+                    <Image
+                      style={styles.voteButton}
+                      source={directionsButton}
+                    />
+                  </View>
                 </View>
               </Callout>
             </Marker>
@@ -130,20 +136,49 @@ export default function MapScreen({ navigation }) {
               <Image style={styles.lotIcon} source={lotImage} />
               <Callout>
                 <View style={styles.calloutContainer}>
-                  <Text>21704 S Figueroa St.</Text>
                   <Image
                     style={styles.locationImage}
                     source={{
                       uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/locationImages%2F20808JamisonAve.png?alt=media&token=59d2c6ce-05a4-4d04-a139-e51ffe0d8b8c",
                     }}
                   />
-                  <TouchableOpacity
-                    onPress={() => {
-                      navigation.navigate("Camera");
-                    }}
-                  >
+                  <Text style={styles.headerText}>Carson Lot A - DreamGreen Location</Text>
+                  <Text>21704 S Figueroa St Carson, CA 90745</Text>
+                  <View style={styles.buttonContainer}>
                     <Image style={styles.voteButton} source={voteButton} />
-                  </TouchableOpacity>
+                    <Image
+                      style={styles.voteButton}
+                      source={directionsButton}
+                    />
+                  </View>
+                </View>
+              </Callout>
+            </Marker>
+
+            <Marker
+              coordinate={LOT3}
+              onCalloutPress={(e) => {
+                navigation.navigate("Camera");
+              }}
+            >
+              <Image style={styles.lotIcon} source={lotImage} />
+              <Callout>
+                <View style={styles.calloutContainer}>
+                  <Image
+                    style={styles.locationImage}
+                    source={{
+                      uri: "https://firebasestorage.googleapis.com/v0/b/lots-parks-sea.appspot.com/o/locationImages%2F1257W223rdSt.png?alt=media&token=26c06145-60ba-4b41-bc36-0a02ee711c2d",
+                    }}
+                  />
+                  <Text style={styles.headerText}>Carson Lot A - DreamGreen Location</Text>
+                  <Text>21704 S Figueroa St Carson, CA 90745</Text>
+                  <View style={styles.buttonContainer}>
+                    <Image style={styles.voteButton} source={voteButton} />
+                    <Image
+                      style={styles.voteButton}
+                      source={directionsButton}
+                    />
+                  </View>
                 </View>
               </Callout>
             </Marker>
@@ -211,17 +246,26 @@ const styles = StyleSheet.create({
     width: 50,
   },
   locationImage: {
-    height: 75,
-    width: 150,
+    height: 125,
+    width: 300,
+    marginBottom: 10,
   },
   voteButton: {
     height: 25,
-    width: 75,
+    width: 125,
     margin: 10,
   },
   calloutContainer: {
     flex: 1,
     alignItems: "center",
-    maxHeight: 125,
+    maxHeight: 225,
   },
+  buttonContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  headerText: {
+    fontWeight: 'bold',
+  }
+  
 });
