@@ -18,9 +18,7 @@
 
 Imagine you had an empty lot and the ability to help the planet, what would you do with it? An abandoned strip mall can turn into a botanical garden, a dried up lot can be nurtured into a community garden, and an overgrown field can be reshaped into a park.
 # Prototype
-<p align="center">
-<img src="https://snap-academy-final.s3.amazonaws.com/Prototype.gif">
-</p>
+![prototype](https://snap-academy-final.s3.amazonaws.com/Prototype.gif)
 
 
 #### Prototype Description
@@ -37,9 +35,7 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 * Adobe Illustrator 
 
 # Snap Lens
-<p align="center">
-<img width="100" src="https://snap-academy-final.s3.amazonaws.com/Screen+Shot+2021-08-12+at+11.49.46+AM.png">
-</p>
+![Snap Lens](https://snap-academy-final.s3.amazonaws.com/Screen+Shot+2021-08-12+at+11.49.46+AM.png)
 
 #### Snap Lens Description
 * The Snap Lens will be unlocked by a drop down notification 
@@ -54,9 +50,7 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 * Adobe Dimension
 
 # Application
-<p align="center">
-<img src="https://snap-academy-final.s3.amazonaws.com/functionalDemo.gif">
-</p>
+![Application](https://snap-academy-final.s3.amazonaws.com/functionalDemo.gif)
 
 #### Application Instructions
 To run the application on your device, make sure you have the latest version of NODE installed, YARN, and the Expo CLI
