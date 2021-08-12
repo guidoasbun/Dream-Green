@@ -1,5 +1,21 @@
 ![Project Image](https://snap-academy-final.s3.amazonaws.com/dreamGreen2.png)
 
+<p align="center"> 
+
+</p>
+
+# Our Team
+![Our Team](https://snap-academy-final.s3.amazonaws.com/ourTeam.png)
+| Name / Role | LinkedIn |
+| ----------- | ----------- | 
+| Guido Asbun  /  Engineering | [LinkedIn](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
+| Maria Nicolas / Storyteller / 3D Lens | [LinkedIn](https://www.linkedin.com/in/mariaxnicolas/) |
+| Eudin De La Torre / Storyteller / Orgaization | [LinkedIn](https://www.linkedin.com/in/eudin/) |
+| Ceirra Lark / Designer / 3D Lens | [LinkedIn](https://www.linkedin.com/in/ceirra-l-85382538/) |
+| Daniel Austin / Designer / Prototype | [LinkedIn](https://www.linkedin.com/in/imdanielaustin/) |
+
+# Our Story
+
 Imagine you had an empty lot and the ability to help the planet, what would you do with it? An abandoned strip mall can turn into a botanical garden, a dried up lot can be nurtured into a community garden, and an overgrown field can be reshaped into a park.
 # Prototype
 <p align="center">
@@ -80,14 +96,4 @@ To run the application on your device, make sure you have the latest version of 
 * Google Services
 * Miro
 * Asana
-
-
-#### Project Team Members
-| Name / Role | LinkedIn |
-| ----------- | ----------- | 
-| Guido Asbun  /  Engineering | [LinkedIn](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
-| Maria Nicolas / Storyteller / 3D Lens | [LinkedIn](https://www.linkedin.com/in/mariaxnicolas/) |
-| Eudin De La Torre / Storyteller | [LinkedIn](https://www.linkedin.com/in/eudin/) |
-| Ceirra Lark / Designer / 3D Lens | [LinkedIn](https://www.linkedin.com/in/ceirra-l-85382538/) |
-| Daniel Austin / Designer | [LinkedIn](https://www.linkedin.com/in/imdanielaustin/) |
 
