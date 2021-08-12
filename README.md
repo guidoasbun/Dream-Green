@@ -1,9 +1,5 @@
 ![Project Image](https://snap-academy-final.s3.amazonaws.com/dreamGreen2.png)
 
-<p align="center"> 
-
-</p>
-
 # Our Team
 ![Our Team](https://snap-academy-final.s3.amazonaws.com/ourTeam.png)
 | Name / Role | LinkedIn |
@@ -18,7 +14,7 @@
 
 Imagine you had an empty lot and the ability to help the planet, what would you do with it? An abandoned strip mall can turn into a botanical garden, a dried up lot can be nurtured into a community garden, and an overgrown field can be reshaped into a park.
 # Prototype
-![prototype](https://snap-academy-final.s3.amazonaws.com/Prototype.gif)
+![](https://snap-academy-final.s3.amazonaws.com/Prototype.gif)
 
 
 #### Prototype Description
@@ -50,7 +46,7 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 * Adobe Dimension
 
 # Application
-![Application](https://snap-academy-final.s3.amazonaws.com/functionalDemo.gif)
+![](https://snap-academy-final.s3.amazonaws.com/functionalDemo.gif)
 
 #### Application Instructions
 To run the application on your device, make sure you have the latest version of NODE installed, YARN, and the Expo CLI
