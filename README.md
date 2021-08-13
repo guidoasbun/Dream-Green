@@ -17,9 +17,9 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 
 # Prototype
 
-<p align="center">
+
 <img src="Assets/readme/prototype.gif">
-</p>
+
 
 #### Prototype Description
 
@@ -39,9 +39,9 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 
 # Snap Lens
 
-<p align="center">
+
 <img src="Assets/readme/lens.png">
-</p>
+
 
 #### Snap Lens Description
 
@@ -59,9 +59,9 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 
 # Application
 
-<p align="center">
+
 <img src="Assets/readme/functionalDemo.gif">
-</p>
+
 
 #### Application Instructions
 
