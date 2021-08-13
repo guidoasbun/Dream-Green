@@ -39,7 +39,7 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 
 # Snap Lens
 
-![Project Image](Assets/readme/lens.png)
+![Project Image](https://snap-academy-final.s3.amazonaws.com/Screen+Shot+2021-08-12+at+11.49.46+AM.png)
 
 
 #### Snap Lens Description
