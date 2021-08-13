@@ -39,8 +39,7 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 
 # Snap Lens
 
-
-<img src="Assets/readme/lens.png">
+![Project Image](Assets/readme/lens.png)
 
 
 #### Snap Lens Description
