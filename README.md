@@ -11,12 +11,13 @@
 | Ceirra Lark / Designer / 3D Lens | [LinkedIn](https://www.linkedin.com/in/ceirra-l-85382538/) |
 | Daniel Austin / Designer / Prototype | [LinkedIn](https://www.linkedin.com/in/imdanielaustin/) |
 
+###To watch a video of the presentation, click [HERE](https://drive.google.com/file/d/17DHjqDA66vsM9LRI2mc0HikWRjmoJwoK/view?usp=sharing).
+
 # Our Story
 
 Imagine you had an empty lot and the ability to help the planet, what would you do with it? An abandoned strip mall can turn into a botanical garden, a dried up lot can be nurtured into a community garden, and an overgrown field can be reshaped into a park.
 
 # Prototype
-
 
 ![Prototype2-1](https://user-images.githubusercontent.com/42722843/137569872-2bf54d22-18a5-4ab0-a104-145ea93015a1.gif)
 
