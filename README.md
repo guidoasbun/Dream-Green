@@ -11,7 +11,7 @@
 | Ceirra Lark / Designer / 3D Lens | [LinkedIn](https://www.linkedin.com/in/ceirra-l-85382538/) |
 | Daniel Austin / Designer / Prototype | [LinkedIn](https://www.linkedin.com/in/imdanielaustin/) |
 
-###To watch a video of the presentation, click [HERE](https://drive.google.com/file/d/17DHjqDA66vsM9LRI2mc0HikWRjmoJwoK/view?usp=sharing).
+### To watch a video of the presentation, click [HERE](https://drive.google.com/file/d/17DHjqDA66vsM9LRI2mc0HikWRjmoJwoK/view?usp=sharing).
 
 # Our Story
 
