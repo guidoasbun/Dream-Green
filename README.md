@@ -17,7 +17,9 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 
 # Prototype
 
-<img alt="Prototype" height="400" src="https://snap-academy-final.s3.amazonaws.com/Prototype2-1.gif" width="200"/>
+
+![Prototype2-1](https://user-images.githubusercontent.com/42722843/137569872-2bf54d22-18a5-4ab0-a104-145ea93015a1.gif)
+
 
 
 #### Prototype Description
