@@ -60,7 +60,8 @@ Imagine you had an empty lot and the ability to help the planet, what would you 
 # Application
 
 
-<img src="Assets/readme/functionalDemo.gif">
+![functionalDemo2](https://user-images.githubusercontent.com/42722843/137569975-5a13d702-3f6f-4a42-95da-6447e15eac20.gif)
+
 
 
 #### Application Instructions
