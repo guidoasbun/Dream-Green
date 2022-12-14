@@ -5,7 +5,7 @@
 ![Our Team](https://snap-academy-final.s3.amazonaws.com/ourTeam.png)
 | Name / Role | LinkedIn |
 | ----------- | ----------- |
-| Guido Asbun / Engineering | [LinkedIn](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
+| Guido Asbun / - Engineering | [LinkedIn](https://www.linkedin.com/in/guidoasbun/) |
 | Maria Nicolas / Storyteller / 3D Lens | [LinkedIn](https://www.linkedin.com/in/mariaxnicolas/) |
 | Eudin De La Torre / Storyteller / Orgaization | [LinkedIn](https://www.linkedin.com/in/eudin/) |
 | Ceirra Lark / Designer / 3D Lens | [LinkedIn](https://www.linkedin.com/in/ceirra-l-85382538/) |
